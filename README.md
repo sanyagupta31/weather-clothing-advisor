@@ -1,46 +1,47 @@
-Here’s the **complete professional README** for your project titled **"Weather-Responsive Clothing Advisor"**, based on your partial content. You can paste this in your `README.md` file:
+
+# Weather-Responsive Clothing Advisor
+
+An intelligent AI-powered clothing suggestion web app built using **Streamlit**. The application fetches **live weather data** and recommends appropriate clothing based on the **temperature** and **weather conditions** in Indian cities.
 
 ---
 
-````markdown
-# 🌤️ Weather-Responsive Clothing Advisor
+## Features
 
-A simple yet intelligent AI-powered clothing suggestion web app built with **Streamlit**. It uses **live weather data** to recommend suitable clothing for users based on the **current temperature** and **weather condition** in Indian cities.
-
----
-
-## 🔍 Features
-
-- 🌦️ **Live Weather Fetching** via [WeatherAPI](https://www.weatherapi.com/)
-- 🧥 **Clothing Advice** tailored to real-time weather
-- 🖥️ **Interactive UI** using Streamlit
-- 🌐 **Designed for Indian Cities** (e.g., Delhi, Mumbai, Bangalore)
+- Real-time weather data using [WeatherAPI](https://www.weatherapi.com/)
+- Dynamic clothing suggestions based on live weather
+- Interactive user interface with Streamlit
+- Optimized for Indian cities such as Delhi, Mumbai, and Bangalore
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Frontend:** Streamlit  
-- **Backend:** Python  
-- **API:** WeatherAPI  
-- **Environment Management:** Python-dotenv  
-- **Others:** Git, Markdown
+- **Frontend**: Streamlit  
+- **Backend**: Python  
+- **API**: WeatherAPI  
+- **Environment Management**: python-dotenv  
+- **Others**: Git, Markdown
 
 ---
-## 📸 Screenshot
 
-Here’s how the app looks when running locally:
+## Screenshot
+
+The interface of the application when running locally:
 
 ![App Screenshot](screenshot.png)
----
-## 🚀 How to Run the Project Locally
 
-### 1. Clone the repository
+---
+
+## How to Run the Project Locally
+
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/sanyagupta31/weather-clothing-advisor.git
 cd weather-clothing-advisor
-````
+
+
+
 
 ### 2. Create and activate a virtual environment (optional but recommended)
 

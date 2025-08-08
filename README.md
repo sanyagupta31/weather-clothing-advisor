@@ -1,58 +1,58 @@
 
 
 ````markdown
-# Weather-Responsive Clothing Advisor
+🌦️ **Weather-Responsive Clothing Advisor**
 
-An intelligent web app built with Python and Streamlit that provides clothing recommendations based on live weather data for any city in India. The application fetches real-time temperature and weather conditions to help you decide what to wear.
-
----
-
-## ✨ Features
-
--   **Live Weather Data**: Fetches real-time weather information for any Indian city using the WeatherAPI.
--   **Rule-Based Recommendations**: Suggests appropriate clothing based on temperature and conditions (e.g., sunny, rainy, cold).
--   **7-Day Forecast**: Displays a weekly weather forecast and clothing plan.
--   **Export to CSV**: Allows users to download the weekly plan for offline access.
--   **Automatic Refresh**: The weather data automatically updates every 2 hours to provide the most current advice.
--   **Clean User Interface**: A simple, fast, and icon-free interface built with Streamlit.
+An AI-powered, rule-based web application built with Python and Streamlit that helps you decide what to wear based on live weather conditions in any Indian city.  
+It fetches real-time temperature and weather conditions from the WeatherAPI, and then suggests ideal outfits for the day or week.
 
 ---
 
-## 🛠️ Tech Stack
+**✨ Features**
 
--   **Core Language**: Python 3.8+
--   **Web Framework**: Streamlit
--   **Data Handling**: Pandas
--   **API Communication**: Requests
--   **Environment Management**: python-dotenv
--   **Version Control**: Git & GitHub
+- 📡 **Live Weather Data** – Get up-to-date weather information for any Indian city using [WeatherAPI](https://www.weatherapi.com/).
+- 👕 **Rule-Based Recommendations** – Suggests clothing based on temperature and weather conditions (e.g., sunny, rainy, cold).
+- 📅 **7-Day Forecast** – View a complete weekly weather and clothing plan.
+- 💾 **Export to CSV** – Download the weekly clothing plan for offline use.
+- ⏱️ **Automatic Refresh** – Weather data updates automatically every 2 hours for accuracy.
+- 🖥️ **Clean UI** – Minimal, responsive, and easy-to-use interface built with Streamlit.
 
 ---
 
-## 📸 Screenshot
+**🛠️ Tech Stack**
 
-The interface of the application when running locally:
+| Component         | Technology Used |
+|-------------------|-----------------|
+| Language          | Python 3.8+     |
+| Framework         | Streamlit       |
+| Data Handling     | Pandas          |
+| API Requests      | Requests        |
+| Env Management    | python-dotenv   |
+| Version Control   | Git & GitHub    |
+
+---
+
+**📸 Screenshot**
+
+Example of the application interface when running locally:
 
 ![App Screenshot](screenshot.png)
 
 ---
 
-## 🚀 How to Run the Project Locally
+**🚀 Getting Started**
 
-### Prerequisites
+**Prerequisites**
+- [Python 3.8+](https://www.python.org/downloads/)
+- [Git](https://git-scm.com/downloads/)
 
--   [Python 3.8](https://www.python.org/downloads/) or higher
--   [Git](https://git-scm.com/downloads/)
-
-### 1. Clone the Repository
-
-Clone the repository to your local machine. Remember to replace `your-username/your-repository-name` with your actual GitHub details.
+**1. Clone the Repository**
 ```bash
-git clone [https://github.com/sanyagupta31/weather-clothing-advisor.git](https://github.com/sanyagupta31/weather-clothing-advisor.git)
+git clone https://github.com/sanyagupta31/weather-clothing-advisor.git
 cd weather-clothing-advisor
 ````
 
-### 2\. Create and Activate a Virtual Environment
+**2. Create and Activate a Virtual Environment**
 
 ```bash
 # For Linux/Mac
@@ -64,62 +64,61 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-### 3\. Install Dependencies
-
-Install all the required Python libraries from the `requirements.txt` file.
+**3. Install Dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4\. Set Up Your API Key
+**4. Set Up Your API Key**
 
-  - Create a file named `.env` in the root directory of the project.
-  - Sign up on [WeatherAPI](https://www.weatherapi.com/) to get your free API key.
-  - Add your API key to the `.env` file as shown below:
-
-<!-- end list -->
+1. Create a `.env` file in the project root.
+2. Get your free API key from [WeatherAPI](https://www.weatherapi.com/).
+3. Add the key to `.env`:
 
 ```env
 WEATHER_API_KEY=your_actual_api_key_here
 ```
 
-### 5\. Run the Streamlit App
+**5. Run the App**
 
 ```bash
 streamlit run app.py
 ```
 
-The application will open in your default web browser.
+The application will open in your default browser.
 
------
+---
 
-## 📁 File Structure
+**📂 Project Structure**
 
 ```
 weather-clothing-advisor/
-├── app.py              # Main Streamlit application script
-├── requirements.txt    # Project dependencies
-├── .env                # For storing the API key (not tracked by Git)
-├── .gitignore          # Files and directories to be ignored by Git
+├── app.py              # Main Streamlit application
+├── requirements.txt    # Python dependencies
+├── .env                # API key storage (ignored by Git)
+├── .gitignore          # Ignore unnecessary files
 └── README.md           # Project documentation
 ```
 
------
+---
 
-## ⚠️ Note
+**⚠️ Notes**
 
-  - This application is configured to search for cities **only within India**.
-  - Ensure your `WEATHER_API_KEY` is valid and has not expired.
+* The app is designed to fetch weather for **Indian cities only**.
+* Make sure your WeatherAPI key is **active and valid**.
 
------
+---
 
-## 🙌 Acknowledgments & Contribution
+**🙌 Acknowledgments & Contributions**
 
-  - This project was inspired by the daily challenge of choosing an outfit for India's unpredictable weather.
-  - A big thanks to [Streamlit](https://streamlit.io/) and [WeatherAPI](https://www.weatherapi.com/) for their excellent tools.
+* Inspired by the challenge of choosing outfits for India’s unpredictable weather.
+* Thanks to [Streamlit](https://streamlit.io/) and [WeatherAPI](https://www.weatherapi.com/) for their amazing tools.
 
-Contributions are welcome\! If you have suggestions or want to improve the app, please feel free to open an issue or submit a pull request.
+💡 Want to contribute? Fork the repo, create a branch, make changes, and submit a pull request. Suggestions are always welcome!
 
 ```
-```
+
+---
+
+

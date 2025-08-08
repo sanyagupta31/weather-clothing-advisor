@@ -1,124 +1,110 @@
 
+# Weather Data Generator
 
-````markdown
-🌦️ **Weather-Responsive Clothing Advisor**
+## 🌦 Overview
 
-An AI-powered, rule-based web application built with Python and Streamlit that helps you decide what to wear based on live weather conditions in any Indian city.  
-It fetches real-time temperature and weather conditions from the WeatherAPI, and then suggests ideal outfits for the day or week.
-
----
-
-**✨ Features**
-
-- 📡 **Live Weather Data** – Get up-to-date weather information for any Indian city using [WeatherAPI](https://www.weatherapi.com/).
-- 👕 **Rule-Based Recommendations** – Suggests clothing based on temperature and weather conditions (e.g., sunny, rainy, cold).
-- 📅 **7-Day Forecast** – View a complete weekly weather and clothing plan.
-- 💾 **Export to CSV** – Download the weekly clothing plan for offline use.
-- ⏱️ **Automatic Refresh** – Weather data updates automatically every 2 hours for accuracy.
-- 🖥️ **Clean UI** – Minimal, responsive, and easy-to-use interface built with Streamlit.
+Weather-Clothing-Advisor is a **Python-based application** that simulates weather data for multiple cities and stores it in a CSV file.
+It’s perfect for **testing, data analysis practice, or learning CSV handling in Python** without relying on APIs.
 
 ---
 
-**🛠️ Tech Stack**
+## 📂 Project Structure
 
-| Component         | Technology Used |
-|-------------------|-----------------|
-| Language          | Python 3.8+     |
-| Framework         | Streamlit       |
-| Data Handling     | Pandas          |
-| API Requests      | Requests        |
-| Env Management    | python-dotenv   |
-| Version Control   | Git & GitHub    |
-
----
-
-**📸 Screenshot**
-
-Example of the application interface when running locally:
-
-![App Screenshot](screenshot.png)
+```
+weather-data-generator/
+│
+├── data/
+│   └── weather_data.csv         # Generated weather data
+│
+├── src/
+│   └── generate_weather.py      # Main Python script to generate data
+│
+├── README.md                    # Project documentation
+└── requirements.txt             # Dependencies (if any)
+```
 
 ---
 
-**🚀 Getting Started**
+## ✨ Features
 
-**Prerequisites**
-- [Python 3.8+](https://www.python.org/downloads/)
-- [Git](https://git-scm.com/downloads/)
+* Generates **random weather data** for cities.
+* Saves the output in **CSV format**.
+* Includes fields:
 
-**1. Clone the Repository**
-```bash
+  * `City`
+  * `Temperature (°C)`
+  * `Humidity (%)`
+  * `Condition`
+  * `Date`
+* Easy to modify for your own dataset needs.
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Prerequisites
+
+* **Python 3.8+** installed
+* Basic knowledge of running Python scripts
+
+---
+
+### 2️⃣ Installation
+
+Clone the repository:
+
+```
 git clone https://github.com/sanyagupta31/weather-clothing-advisor.git
 cd weather-clothing-advisor
-````
-
-**2. Create and Activate a Virtual Environment**
-
-```bash
-# For Linux/Mac
-python3 -m venv venv
-source venv/bin/activate
-
-# For Windows
-python -m venv venv
-venv\Scripts\activate
-```
-
-**3. Install Dependencies**
-
-```bash
-pip install -r requirements.txt
-```
-
-**4. Set Up Your API Key**
-
-1. Create a `.env` file in the project root.
-2. Get your free API key from [WeatherAPI](https://www.weatherapi.com/).
-3. Add the key to `.env`:
-
-```env
-WEATHER_API_KEY=your_actual_api_key_here
-```
-
-**5. Run the App**
-
-```bash
-streamlit run app.py
-```
-
-The application will open in your default browser.
-
----
-
-**📂 Project Structure**
-
-```
-weather-clothing-advisor/
-├── app.py              # Main Streamlit application
-├── requirements.txt    # Python dependencies
-├── .env                # API key storage (ignored by Git)
-├── .gitignore          # Ignore unnecessary files
-└── README.md           # Project documentation
 ```
 
 ---
 
-**⚠️ Notes**
+### 3️⃣ Usage
 
-* The app is designed to fetch weather for **Indian cities only**.
-* Make sure your WeatherAPI key is **active and valid**.
+Run the Python script to generate the CSV:
 
----
+```
+python src/generate_weather.py
+```
 
-**🙌 Acknowledgments & Contributions**
+Output will be saved in:
 
-* Inspired by the challenge of choosing outfits for India’s unpredictable weather.
-* Thanks to [Streamlit](https://streamlit.io/) and [WeatherAPI](https://www.weatherapi.com/) for their amazing tools.
-
-💡 Want to contribute? Fork the repo, create a branch, make changes, and submit a pull request. Suggestions are always welcome!
-
+```
+data/weather_data.csv
 ```
 
 ---
 
+## 📊 Example CSV Output
+
+| City      | Temperature (°C) | Humidity (%) | Condition | Date       |
+| --------- | ---------------- | ------------ | --------- | ---------- |
+| Delhi     | 32               | 60           | Sunny     | 2025-08-08 |
+| Mumbai    | 28               | 75           | Rainy     | 2025-08-08 |
+| Bangalore | 26               | 68           | Cloudy    | 2025-08-08 |
+
+---
+
+## 🛠 Technologies Used
+
+* **Python** – for generating random data
+* **CSV Module** – for file handling
+
+---
+
+## 💡 Future Enhancements
+
+* Integrate with **Weather API** for real data
+* Add **graph visualizations** for temperature trends
+* Create a **GUI interface** for easier use
+
+---
+
+## 👩‍💻 Author
+
+**Sanya Gupta**
+
+
+---
 

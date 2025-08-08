@@ -39,6 +39,9 @@ weather-data-generator/
 * Easy to modify for your own dataset needs.
 
 ---
+here's the look of project
+![App Screenshot](screenshot.png)
+
 
 ## 🚀 Getting Started
 

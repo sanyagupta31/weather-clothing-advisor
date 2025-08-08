@@ -40,7 +40,7 @@ weather-data-generator/
 
 ---
 here's the look of project
-![App Screenshot](screenshot.png)
+![App Screenshot](pic.png)
 
 
 ## 🚀 Getting Started
